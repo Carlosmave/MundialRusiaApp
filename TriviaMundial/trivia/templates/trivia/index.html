@@ -1,0 +1,8 @@
+{% extends 'trivia/layout.html' %}
+{% block content %}
+<h3 class="center-align red lighten-3">{{question}}</h3>
+<ul class="collection">
+  {% for trivia in trivia %}
+  <li class="collection-item"><a href="/trivia/details/{{trivia.id}}">{{trivia.question}}</li>
+  {% endfor %}
+{% endblock %}

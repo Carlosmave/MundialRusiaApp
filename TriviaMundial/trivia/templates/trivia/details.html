@@ -1,0 +1,16 @@
+{% extends 'trivia/layout.html' %}
+{% block content %}
+<h3 class="center-align red lighten-3">{{triv.question}}</h3>
+<div class="card">
+  <div class="card-content">
+    {{triv.body}}
+  </div>
+  <div class="card-action">
+    {{triv.option1}}
+    {{triv.option2}}
+    {{triv.option3}}
+    {{triv.option4}}
+  </div>
+</div>
+<a href="/trivia" class="btn">Go Back</a>
+{% endblock %}
