@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'TriviaMundial.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'trivia',
+        'NAME': 'mundialrusiaapp',
         'USER': 'postgres',
         'PASSWORD': '123456789',
         'HOST': '127.0.0.1',
