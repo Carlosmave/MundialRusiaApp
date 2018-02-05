@@ -22,7 +22,7 @@ def details(request, id, ttlscore):
         #ttlscore=totalscore
         #strid=str(newid)
         #newscore=int(tscore)
-        
+
         context={
         'triv':triv,
         'id': newid,
@@ -63,7 +63,7 @@ def processing(request, option, id, ttlscore):
         'id':newid#,
         #'ttlscore':ttlscore
         }
-        return render(request, 'trivia/details.html', context)
+        return render(request, 'trivia/outcome.html', context)
     else:
         context2={
         'triv': triv,
@@ -73,7 +73,7 @@ def processing(request, option, id, ttlscore):
         'id':newid#,
         #'ttlscore':ttlscore
         }
-        return render(request, 'trivia/details.html', context2)
+        return render(request, 'trivia/outcome.html', context2)
 
     #context={
     #'triv': triv
